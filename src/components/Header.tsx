@@ -17,7 +17,7 @@ const Header = () => {
           </div>
 
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#" className="hover:text-blue-200 transition-colors">
+            <a href="/" className="hover:text-blue-200 transition-colors">
               Главная
             </a>
             <a href="#" className="hover:text-blue-200 transition-colors">
@@ -32,13 +32,15 @@ const Header = () => {
             <a href="#" className="hover:text-blue-200 transition-colors">
               Контакты
             </a>
-            <Button
-              variant="outline"
-              className="bg-transparent border-white text-white hover:bg-white hover:text-blue-900"
-            >
-              <Icon name="User" size={16} className="mr-2" />
-              Войти
-            </Button>
+            <a href="/auth">
+              <Button
+                variant="outline"
+                className="bg-transparent border-white text-white hover:bg-white hover:text-blue-900"
+              >
+                <Icon name="User" size={16} className="mr-2" />
+                Войти
+              </Button>
+            </a>
           </nav>
 
           <Button variant="ghost" className="md:hidden text-white">
